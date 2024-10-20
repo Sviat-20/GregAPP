@@ -4,59 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clicker MiniApp</title>
-    <style>
-        body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
-    }
-
-    .container {
-        text-align: center;
-    }
-
-    h1 {
-        font-size: 36px;
-        color: #333;
-    }
-
-    .round-button {
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        background-color: #4CAF50;
-        color: white;
-        font-size: 24px;
-        border: none;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
-
-    .round-button:hover {
-        background-color: #45a049;
-    }
-
-    .round-button:active {
-        background-color: #3e8e41;
-    }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <h1>BALANCE: <span id="balance">0</span></h1>
         <button id="clickButton" class="round-button">Click me!</button>
     </div>
-    <script>
-        let balance = 0;
-
-        document.getElementById("clickButton").addEventListener("click", function() {
-    balance++;
-    document.getElementById("balance").innerText = balance;
-});
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
